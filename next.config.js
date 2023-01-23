@@ -1,6 +1,14 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
 
-module.exports = nextConfig
+module.exports = {
+  reactStrictMode: true,
+  sassOptions: {
+    fiber: false,
+  },
+  images: {
+    unoptimized: true,
+  }
+}

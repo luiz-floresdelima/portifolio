@@ -1,0 +1,36 @@
+@import "@/styles/variables.scss";
+
+.skill {
+
+    .barHolder {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+
+        .backBar{
+            background-color: #323132;
+            height: 5px;
+            width: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+
+            .bar{
+                max-width: 80%;
+                background: $main-color;
+                height: 100%;
+                animation: fill 2s linear;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+@keyframes fill {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
